@@ -22,7 +22,6 @@ from redis.client import Redis, PubSub
 from redis.backoff import ExponentialBackoff
 from redis.retry import Retry as RedisRetry
 
-
 from casbin_redis_watcher.options import WatcherOptions
 
 
@@ -44,9 +43,7 @@ class RedisWatcher:
     def recreate_thread(self):
         self.sleep = 10
         self.execute_update = True
-        self.subscribe_thread: Thread = Thread(target=self.subscribe,
-                                               daemon=True
-                                               )
+        self.subscribe_thread: Thread = Thread(target=self.subscribe, daemon=True)
         self.subscribe_event = Event()
         self.close = False
         self.subscribe_thread.start()
@@ -69,11 +66,13 @@ class RedisWatcher:
         """
         Creates a new redis connection instance
         """
-        rds = Redis(host=self.options.host, port=self.options.port,
-                    password=self.options.password,
-                    ssl=self.options.ssl,
-                    retry=RedisRetry(ExponentialBackoff(), 3)
-                    )
+        rds = Redis(
+            host=self.options.host,
+            port=self.options.port,
+            password=self.options.password,
+            ssl=self.options.ssl,
+            retry=RedisRetry(ExponentialBackoff(), 3),
+        )
         return rds
 
     def init_publisher_subscriber(self, init_pub=True, init_sub=True):
@@ -104,7 +103,9 @@ class RedisWatcher:
                 self.sub_client.close()
             self.pub_client = None
             self.sub_client = None
-            print(f"Casbin Redis Watcher error: {e}. Publisher/Subscriber failed to be initialized {self.options.local_ID}")
+            print(
+                f"Casbin Redis Watcher error: {e}. Publisher/Subscriber failed to be initialized {self.options.local_ID}"
+            )
 
     def update(self):
         def func():
@@ -198,8 +199,10 @@ class RedisWatcher:
                             with self.mutex:
                                 self.callback(str(item))
                         except Exception as listen_exc:
-                            print("Casbin Redis watcher failed sending update to teh callback function "
-                                  " process due to: {}".format(str(listen_exc)))
+                            print(
+                                "Casbin Redis watcher failed sending update to teh callback function "
+                                " process due to: {}".format(str(listen_exc))
+                            )
                             if self.sub_client:
                                 self.sub_client.close()
                             break
@@ -208,8 +211,7 @@ class RedisWatcher:
                 if self.sub_client:
                     self.sub_client.close()
         except Exception as redis_exc:
-            print("Casbin Redis watcher failed to subscribe due to: {}"
-                  .format(str(redis_exc)))
+            print("Casbin Redis watcher failed to subscribe due to: {}".format(str(redis_exc)))
         finally:
             if self.sub_client:
                 self.sub_client.close()
