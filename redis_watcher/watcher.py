@@ -19,7 +19,7 @@ from threading import Thread, Lock, Event
 from casbin.model import Model
 from redis.client import Redis, PubSub
 
-from casbin_redis_watcher.options import WatcherOptions
+from redis_watcher.options import WatcherOptions
 
 
 class RedisWatcher:
