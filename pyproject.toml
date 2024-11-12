@@ -1,6 +1,6 @@
 [project]
 name = "redis-watcher"
-version = "1.3.0"
+version = "1.4.0"
 authors = [
     {name = "Casbin", email = "admin@casbin.org"},
 ]

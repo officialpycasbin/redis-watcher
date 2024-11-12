@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.4.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.3.0...v1.4.0) (2024-11-12)
+
+
+### Features
+
+* update path ([a0a0592](https://github.com/officialpycasbin/redis-watcher/commit/a0a0592eb96e88d40b19d1291932fcb2fd101522))
+
 # [1.3.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.2.0...v1.3.0) (2024-03-29)
 
 
