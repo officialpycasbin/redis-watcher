@@ -72,7 +72,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
-    if: ${{ github.ref_name == 'master' }}
     name: Release
     runs-on: ubuntu-latest
     needs: [ test, coveralls ]
