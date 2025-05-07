@@ -19,7 +19,7 @@ from unittest import TestCase
 import casbin
 import redis
 
-from casbin_redis_watcher import WatcherOptions, new_watcher, new_publish_watcher
+from redis_watcher import WatcherOptions, new_watcher, new_publish_watcher
 
 
 def get_examples(path):

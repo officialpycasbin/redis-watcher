@@ -22,7 +22,7 @@ from redis.client import Redis, PubSub
 from redis.backoff import ExponentialBackoff
 from redis.retry import Retry as RedisRetry
 
-from casbin_redis_watcher.options import WatcherOptions
+from redis_watcher.options import WatcherOptions
 
 
 class RedisWatcher:
