@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.5.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.4.0...v1.5.0) (2025-05-08)
+
+
+### Features
+
+* Add changes to allow redis-watcher to work with flask authz + redis 5 ([624ec90](https://github.com/officialpycasbin/redis-watcher/commit/624ec9005a1c5ad76d20be0607cba48ba4236257))
+
 # [1.4.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.3.0...v1.4.0) (2024-11-12)
 
 
