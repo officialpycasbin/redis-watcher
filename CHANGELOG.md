@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.6.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.5.0...v1.6.0) (2025-05-09)
+
+
+### Features
+
+* fix CI release branch ([#4](https://github.com/officialpycasbin/redis-watcher/issues/4)) ([a9b86f1](https://github.com/officialpycasbin/redis-watcher/commit/a9b86f1226d39bc4f9182ab8662cc32eb49b44e6))
+
 # [1.5.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.4.0...v1.5.0) (2025-05-08)
 
 
