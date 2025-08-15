@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.7.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.6.0...v1.7.0) (2025-08-15)
+
+
+### Features
+
+* switch from casbin to pycasbin ([#5](https://github.com/officialpycasbin/redis-watcher/issues/5)) ([4130314](https://github.com/officialpycasbin/redis-watcher/commit/4130314d66907c05ab6cf0514e1323c59ceaa29d))
+
 # [1.6.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.5.0...v1.6.0) (2025-05-09)
 
 
