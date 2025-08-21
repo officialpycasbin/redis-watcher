@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.8.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.7.0...v1.8.0) (2025-08-21)
+
+
+### Features
+
+* fix README badges ([#6](https://github.com/officialpycasbin/redis-watcher/issues/6)) ([eac9aaf](https://github.com/officialpycasbin/redis-watcher/commit/eac9aaf7c7b8d1eea32fc68a2be4bca44f3bc24f))
+
 # [1.7.0](https://github.com/officialpycasbin/redis-watcher/compare/v1.6.0...v1.7.0) (2025-08-15)
 
 
